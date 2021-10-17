@@ -1,0 +1,16 @@
+{
+    "name": "ashley/template-engine",
+    "description": "Simple Template Engine",
+    "autoload": {
+        "psr-4": {
+            "Ashley\\TemplateEngine\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ashley Bailey",
+            "email": "admin@zeplinwarriors.com"
+        }
+    ],
+    "require": {}
+}
