@@ -14,7 +14,7 @@ Requires PHP version 5.3+
 Installation is super-easy via [Composer](https://getcomposer.org/):
 
 ```bash
-$ composer require vlucas/phpdotenv
+$ composer require ashley/template-engine
 ```
 
 or add it by hand to your `composer.json` file.
