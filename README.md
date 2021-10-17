@@ -8,24 +8,34 @@ It's easy to learn and is useful for small websites or in conjunction with micro
 
 Requires PHP version 5.3+
 
-Setup
------
 
-To use the template engine, include `loader.php`, create an `Environment` object, and render away!
+## Installation
+
+Installation is super-easy via [Composer](https://getcomposer.org/):
+
+```bash
+$ composer require vlucas/phpdotenv
+```
+
+or add it by hand to your `composer.json` file.
+
+
+## Setup
+
+To use the simple template engine, include composer, create an `Environment` object, and render away!
 The Environment's `render()` function takes the path to a template, renders it and returns its contents as a string.
 
 ```php
-//include the loader
-require_once 'path/to/loader.php';
+require_once 'vendor/autoload.php';
 
-$env = new SimpleTemplateEngine\Environment('path/to/templates/directory');
+$env = new Ashley\TemplateEngine\Environment('path/to/templates/directory');
 echo $env->render('template.php');
 ```
 
 You can also pass in an extension that will be appended to all template paths in Environment.
 
 ```php
-$env = new SimpleTemplateEngine\Environment('path/to/templates', '.php');
+$env = new Ashley\TemplateEngine\Environment('path/to/templates', '.php');
 
 //will render index.php
 echo $env->render('index');
